@@ -1,0 +1,53 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.77.200.240:3306/lottery
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  thymeleaf:
+      content-type: text/html
+      cache: false
+      mode: LEGACYHTML5
+      prefix: classpath:/templates
+      suffix: .html
+  session:
+    store-type: none
+  redis:
+    database: 0
+    host: 120.77.200.240
+    port: 6399
+    pool:
+      max-active: 8
+      min-idle: 0
+      max-wait: -1
+    password: Th1nkdcn
+    timeout: 0
+activity:
+  id: 1
+  beginDate: 2017-09-01 00:00:00
+  endDate: 2017-11-31 23:59:59
+swagger:
+  base-package: com.thinkive
+  title: 抽奖
+  description: 抽奖API
+  version: 1.1.0.RELEASE
+  license: Apache License, Version 2.0
+  license-url: https://www.apache.org/licenses/LICENSE-2.0.html
+  terms-of-service-url: https://github.com/dyc87112/spring-boot-starter-swagger
+  contact:
+    name: dengchangneng
+    email: 382517195@qq.com
+  base-path: /**
+  exclude-path: /error, /ops/**
+
+#security:
+  #basic:
+    #enabled: false
+

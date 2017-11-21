@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<meta charset="utf-8"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+	    <meta name="format-detection" content="telephone=no"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="telephone=no" name="format-detection" />
+	    <meta name="browsermode" content="application"/>
+	    <meta name="x5-page-mode" content="app"/>
+	    <meta name="msapplication-tap-highlight" content="no"/>
+		<title></title>
+		<link href="/css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="login_bg">
+			<img src="/images/login_bg.png" />
+		</div>
+		<form>
+		<div class="num">
+			<img src="/images/shouji.png"/><input class="numphone" type="number" name="userName" placeholder="请输入手机号" />
+		</div>
+		
+		<!--<div class="num yzm">
+			<img src="../images/shouji.png"/><input class="numphone numyzm" type="number" placeholder="请输入手机号" /><div class="get_yzm">验证码</div>
+			
+		</div>-->
+		<div class="password">
+			<img src="/images/login_password.png"/><input class="numpassword" type="password" name="password" placeholder="请输入密码" />
+		</div>
+		<div class="password">
+			<img src="/images/login_password.png"/><input class="numpassword" type="password" name="password2"  placeholder="请再次输入密码" />
+		</div>
+		<span class="register" id="register">注册</span>
+		</form>
+		<script src="scripts/jquery-3.2.1.min.js"></script>
+		<script src="scripts/register.js"></script>
+	</body>
+</html>
